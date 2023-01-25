@@ -1,2 +1,4 @@
-# SOLID-CSHARP
-Aplicacao dos conceitos SOLID em uma aplicacao com Csharp e NetCore
+# Commerce com MVC e EF Core
+Desenvolvendo um Commerc com MVC no ambiente .Net.
+
+***Em desenvolvimento***
