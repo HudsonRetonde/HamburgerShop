@@ -1,4 +1,4 @@
-# Commerce com MVC e EF Core
-Desenvolvendo um Commerc com MVC no ambiente .Net.
+# HamburguerShop
+Desenvolvimento de uma lanchonete virtual com MVC no ambiente .Net6.
 
 ***Em desenvolvimento***
