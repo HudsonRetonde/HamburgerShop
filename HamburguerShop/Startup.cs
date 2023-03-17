@@ -1,4 +1,6 @@
 ﻿using HamburguerShop.Context;
+using HamburguerShop.Repositories;
+using HamburguerShop.Repositories.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,7 +21,10 @@ public class Startup
         services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-        services.AddControllersWithViews();
+        services.AddTransient<ILancheRepository, LancheRepository>();
+		services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+
+		services.AddControllersWithViews();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
